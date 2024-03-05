@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,21 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Hospital
+namespace Hospital.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для Main.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : Page
     {
-        public static MainWindow mainWindow;
-        public MainWindow()
+        public Main()
         {
             InitializeComponent();
-            mainWindow = this;
-            OpenPages(new Pages.Autorization());
         }
-
-        public void OpenPages(Page _pages) => frame.Navigate(_pages);
     }
 }
