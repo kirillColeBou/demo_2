@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hospital.Classes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,9 +19,21 @@ namespace Hospital.Pages
     /// </summary>
     public partial class Main : Page
     {
+        MedicalCardPatientsContext Context = new MedicalCardPatientsContext();
+        
         public Main()
         {
             InitializeComponent();
+            CreateUI();
+        }
+
+        public void CreateUI()
+        {
+            patients.Children.Clear();
+            foreach (var item in Context.MedicalCardPatients)
+            {
+                patients.Children.Add(new Elements.MedicalCardPatients(item));
+            }
         }
     }
 }

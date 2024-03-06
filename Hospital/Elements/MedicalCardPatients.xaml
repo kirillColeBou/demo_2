@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Hospital.Elements.MedicalCardPatients"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hospital.Elements"
+             mc:Ignorable="d">
+    <Grid Margin="10,0,10,10" Background="DarkGray">
+        <Label x:Name="PatientsId" Foreground="Black" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label x:Name="Information" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+        <Label x:Name="Descriptions" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0"/>
+        <Label x:Name="Diagnosis" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0"/>
+        <Label x:Name="Recomendations" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+        <Label x:Name="Recipe" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0"/>
+        <Label x:Name="NamePreparation" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,190,0,0"/>
+        <Label x:Name="Dosage" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0"/>
+        <Label x:Name="ReceptionFormat" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,250,0,0"/>
+        <Label x:Name="Direction" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,280,0,0"/>
+        <Label x:Name="Research" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,310,0,0"/>
+        <Label x:Name="Procedures" Foreground="Black" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,340,0,0"/>
+        <Button Click="UpdateInformation" Content="Изменить" HorizontalAlignment="Left" Width="100" Height="25" VerticalAlignment="Top" Margin="10,370,0,10"/>
+    </Grid>
+</UserControl>
